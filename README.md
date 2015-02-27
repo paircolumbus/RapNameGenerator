@@ -6,13 +6,17 @@ __Time Limit:__ 30 minutes
 This is a fun challenge intended to help you develop your skills in Object Oriented Javascript. Here you'll be working to finish an incomplete name generator that with some given input from the user should randomly output a hilarious rap name reminiscent of 90's supergroup, the Wu-Tang Clan.
 
 ##Instructions
-The expected randomized output should follow the following patterns given a user input's the name, Sharif.
+The expected randomized output should follow these patterns given a user submits the name `Ellen`:
 
-- Inspectah Sharif
-- S.H.A.R.I.F. the Chef
-- Sharif the Chef
-- Inspectah S
-- Inspectah Sharif the Chef
+- Inspectah Ellen
+- E.L.L.E.N. the Chef
+- Ellen the Chef
+- Inspectah E
+- Inspectah Ellen the Chef
+
+##Final Product
+<a href='http://i.imgur.com/PKqOcUf.png'><img src='http://i.imgur.com/PKqOcUf.png', width='200px'></a>  
+__NOTE:__ Your final product should behave somewhat like [this](https://jaybobo.github.io/projects/rap-name-gen/). Feel free to make it your own.
 
 ##Things To Think About
 - How will you structure your code?  
