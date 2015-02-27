@@ -1,6 +1,6 @@
 #Rap Name Generator
 
-__Skill Level:__ Intermediate
+__Skill Level:__ Intermediate  
 __Time Limit:__ 30 minutes  
 
 This is a fun challenge intended to help you develop your skills in Object Oriented Javascript. Here you'll be working to finish an incomplete name generator that with some given input from the user should randomly output a hilarious rap name reminiscent of 90's supergroup, the Wu-Tang Clan.
