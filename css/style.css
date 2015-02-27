@@ -1,0 +1,48 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h2 {
+	box-shadow: 5px 5px 5px #000000;
+}
+
+.welcome {
+	margin: 40px 15px;
+	text-align: center;
+}
+
+
+
+.messages {
+	width: 400px;
+	margin: 50px auto auto auto;
+}
+
+.input-name {
+	width: 400px;
+	margin: 0 auto 10px auto;
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+.response {
+	margin: 0 0 15px 0;
+	display:none;
+	color: #009900;
+}
+
+.error {
+	font: italic bold 1em;
+	color: #990000;
+	margin: 0 0 15px 0;
+	display:none;
+
+}
+
