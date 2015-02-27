@@ -14,8 +14,11 @@ The expected randomized output should follow the following patterns given a user
 - Inspectah S
 - Inspectah Sharif the Chef
 
+##Things To Think About
+- How will you structure your code?  
+- Did you remember to validate user input?  
+- What are the differences between class and prototype-based inheritance?  
+
 ##Resources
 - [Mozilla - Introduction to OOJS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 - [Javascript is Sexy](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
-
-
