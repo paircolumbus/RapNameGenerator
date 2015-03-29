@@ -26,3 +26,14 @@ __NOTE:__ Your final product should behave somewhat like [this](https://jaybobo.
 ##Resources
 - [Mozilla - Introduction to OOJS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 - [Javascript is Sexy](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
+
+##Http Server
+There are many ways to view your code. One easy option is to install [node](https://nodejs.org/). If you're on a mac, you can use homebrew. Then install
+[http-server](https://github.com/indexzero/http-server) by typing:
+```bash
+npm install http-server -g
+```
+From your git cloned directory just type:
+```bash
+http-server
+```
