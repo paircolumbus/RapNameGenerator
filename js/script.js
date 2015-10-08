@@ -20,6 +20,70 @@ function Generator() {
 
 }
 
+Generator.prototype = {
+    constructor: Generator,
+    pick_first_name: function() {
+        return this.select_string(this.first_names);
+    },
+
+    pick_middle_name: function(name) {
+        var percent = this.random_percent();
+        if(percent < 10)
+        {
+            // Initial
+            return name.substr(0, 1).toUpperCase();
+        }
+        else if(percent < 25)
+        {
+            // N.A.M.E.
+            return this.make_dotted_name(name);
+        }
+        return name;
+    },
+
+    pick_last_name: function() {
+        return this.select_string(this.last_names);
+    },
+
+    pick_name:function(name) {
+        var percent = this.random_percent();
+        if(percent < 10)
+            return this.all_parts(name);
+        if(percent < 60)
+            return this.middle_and_last(name);
+        return this.first_and_middle(name);
+    },
+
+    all_parts:function(name) {
+        return [this.pick_first_name(),
+                this.pick_middle_name(name),
+                this.pick_last_name()
+                ].join(' ');
+    },
+    first_and_middle:function(name) {
+        return [this.pick_first_name(),
+                this.pick_middle_name(name),
+                ].join(' ');
+    },
+    middle_and_last:function(name) {
+        return [this.pick_middle_name(name),
+                this.pick_last_name()
+                ].join(' ');
+    },
+
+    random_percent:function() {
+        return Math.floor(Math.random() * 100);
+    },
+    select_string:function(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    },
+    make_dotted_name:function(name) {
+        return name.split('').map(function(val){
+            return val.toUpperCase();
+        }).join('.') + '.';
+    },
+};
+
 
 //Add your codez here
 
@@ -28,5 +92,21 @@ $(document).ready(function() {
 
     var engine = new Generator;
     //Add your codez here
+    //
+    $('button').click(function(evt) {
+        var name = $('#user-input').val();
+        if(name.length == 0) {
+            // show alert
+            $('.error:hidden').show();
+            $('.response:visible').hide();
+            return;
+        }
+        var rap_name = engine.pick_name(name);
+        $('.response').text(rap_name);
+        // show name
+        $('.response:hidden').show();
+        $('.error:visible').hide();
+        return;
+    })
 
 });
