@@ -15,7 +15,8 @@ The expected randomized output should follow these patterns given a user submits
 - Inspectah Ellen the Chef
 
 ## Final Product
-<a href='http://i.imgur.com/PKqOcUf.png'><img src='http://i.imgur.com/PKqOcUf.png', width='200px'></a>  
+<a href='http://i.imgur.com/PKqOcUf.png'><img src='http://i.imgur.com/PKqOcUf.png' width='200px'></a> 
+
 __NOTE:__ Your final product should behave somewhat like [this](https://jaybobo.github.io/projects/rap-name-gen/). Feel free to make it your own.
 
 ## Things To Think About
